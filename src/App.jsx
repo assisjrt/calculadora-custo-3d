@@ -533,6 +533,9 @@ export default function Calc3D() {
             .grid-3d-calc { grid-template-columns: 1fr !important; }
             .grid-3d-info { grid-template-columns: 1fr !important; }
           }
+          @media (max-width: 480px) {
+            .grid-3d-materiais { grid-template-columns: 1fr !important; }
+          }
         `}</style>
 
         {tab === "calc" && (
@@ -948,7 +951,7 @@ export default function Calc3D() {
                   Preço padrão por material
                 </span>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 14 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 14 }} className="grid-3d-materiais">
                 {materiais.map((m) => (
                   <Field key={m.id} label={m.label} hint="R$/kg">
                     <NumberInput value={m.defaultPrice} onChange={(v) => updateMaterialPrice(m.id, v)} suffix="R$" step={1} />
