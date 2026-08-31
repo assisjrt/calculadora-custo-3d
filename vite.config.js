@@ -6,5 +6,5 @@ import react from "@vitejs/plugin-react";
 // Sem isso, o build funciona local mas os assets (JS/CSS) quebram no GitHub Pages.
 export default defineConfig({
   plugins: [react()],
-  base: "/calc3d/",
+  base: "/calculadora-custo-3d/",
 });
