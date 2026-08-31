@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// IMPORTANTE: troque "calc3d" pelo nome exato do seu repositório no GitHub.
-// Se o repo for github.com/SEU_USUARIO/minha-calculadora, use "/minha-calculadora/".
-// Sem isso, o build funciona local mas os assets (JS/CSS) quebram no GitHub Pages.
+// Domínio customizado (calc3d.betozostore.com) serve o site na raiz,
+// por isso o base precisa ser "/" em vez do subcaminho do repositório.
 export default defineConfig({
   plugins: [react()],
-  base: "/calculadora-custo-3d/",
+  base: "/",
 });
