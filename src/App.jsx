@@ -484,7 +484,7 @@ export default function Calc3D() {
     <div
       style={{
         background: COLORS.bg,
-        minHeight: "100%",
+        minHeight: "100vh",
         padding: "32px 20px",
         fontFamily: "'IBM Plex Sans', sans-serif",
       }}
