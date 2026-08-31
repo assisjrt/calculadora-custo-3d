@@ -497,7 +497,7 @@ export default function Calc3D() {
         <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 28, flexWrap: "wrap", gap: 16 }}>
           <div>
             <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 24, fontWeight: 700, color: COLORS.text, margin: 0 }}>
-              Custo de impressão 3D
+              Betozo Store - Custo de impressão 3D
             </h1>
           </div>
           <div style={{ display: "flex", gap: 4, background: COLORS.panel, border: `1px solid ${COLORS.border}`, borderRadius: 8, padding: 4 }}>
